@@ -1,7 +1,7 @@
 // The device frame: on a big computer screen the pad sits as a tablet on a crew-room desk, with a lock button on the
 // top edge and two brightness buttons on the right edge; next to it lies the crew ID card of the signed-in pilot.
 // On tablets, phones and as an installed app the pad stays full screen. Setting "frame": auto | on | off.
-// Own design in Emirates-like colours. Text word mark only – no airline logo in this fan project.
+// Own design in Emirates-like colours. The Emirates logo on the card comes from pics.avs.io at runtime, never from this repo.
 import { S, settings } from "./data.js";
 import { t } from "./i18n.js";
 import { esc } from "./util.js";
@@ -39,7 +39,7 @@ function renderCard(room) {
   const d = pilot(), o = S.ofp;
   const name = d?.name || t("Crew"), id = d?.pilotId || d?.callsign || "";
   c.innerHTML = `<div class="cc-strap"></div><div class="cc-clip"></div><div class="cc-card">
-    <div class="cc-top"><span class="vbrand txt"><span class="word">EMIRATES</span><span class="vword">Virtual</span></span><span>${t("Emirates Virtual crew")}</span></div>
+    <div class="cc-top"><span class="vbrand"><img class="ek-logo" src="https://pics.avs.io/240/80/EK.png" alt="Emirates" referrerpolicy="no-referrer" onerror="this.remove()"><span class="vword">Virtual</span></span><span>${t("Emirates Virtual crew")}</span></div>
     <div class="cc-photo">${esc(initials(name))}</div>
     <div class="cc-name">${esc(name)}</div>
     <div class="cc-rank">${esc(d?.rank || "")}</div>

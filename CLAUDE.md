@@ -7,7 +7,7 @@ Der Nutzer (sbelic95) schreibt Deutsch; antworte auf Deutsch. Die Oberfläche is
 - Repo: `sbelic95/uae-pad`, Branch `main`. Seite: `https://sbelic95.github.io/uae-pad/` (GitHub Pages aus `main`, Ordner `/`).
 - Nur der Nutzer selbst benutzt das Pad. Es gibt **kein Emirates-Virtual-Dashboard**: `DASH` in `js/account.js` ist leer, der Konto-Teil ist ausgeblendet.
 - Heimatbasis **OMDB** (Dubai). Rufzeichen `UAE…`, Flugnummern `EK…`. Nur OFPs mit Rufzeichen `UAE` werden geladen.
-- **Kein Emirates-Logo**: nur der eigene Schriftzug „EMIRATES Virtual“ (`brand()` in `js/lock.js`, Crew-Karte in `js/frame.js`). Farben: Rot `#C8102E`, Gold `#E0B45C`, Burgund `#4A0D12`, warme dunkle Neutraltöne.
+- **Emirates-Logo** (Wunsch des Nutzers, 27.11.2026): wird nur zur Laufzeit von `pics.avs.io/…/EK.png` geladen, nie ins Repo gelegt; ohne Netz der Schriftzug „EMIRATES“ (`brand()` in `js/lock.js`, Crew-Karte in `js/frame.js`). Darunter immer „Virtual“ und der Hinweis „nicht verbunden“. Farben: Rot `#C8102E`, Gold `#E0B45C`, Burgund `#4A0D12`, warme dunkle Neutraltöne.
 - Flugplan: `python3 tools/import-schedule.py <Ordner>` mit den vAMSYS-CSV-Dateien `UAE_Passenger_Schedule_*`, `UAE_Cargo_Schedule_*` (optional), `UAE_airports_*`, `UAE_fleet_*`, `UAE_Aircraft_*`. Cargo-Flüge haben `cargo: true`.
 - VA-Inhalte (`va/checklists.json`, `va/landing.json`, `va/asl-stands.json`, Airframes `FLEET` in `js/apps/ops.js`) sind leer, bis Emirates Virtual echte Daten liefert – nichts erfinden.
 - Speicher-Schlüssel beginnen mit `uae.` (nicht `asl.`), weil ASL Pad und UAE Pad auf derselben Domain `sbelic95.github.io` laufen.
@@ -27,7 +27,7 @@ Der Nutzer (sbelic95) schreibt Deutsch; antworte auf Deutsch. Die Oberfläche is
 - Nie `scrollIntoView` benutzen: es verschiebt das ganze Pad. Stattdessen `scrollTop` des `.app-body` setzen.
 - Speicher nur über `store` aus `js/util.js`, Schlüssel beginnen mit `uae.`. Flugzustand: `uae.flight.<cs>.<dep>.<arr>.<tag>`, Logbuch `uae.logbook` (Demo: `uae.logbook.demo`).
 - Neue Dateien in `sw.js` in die Liste `SHELL` aufnehmen und bei Änderungen an der Offline-Hülle `CACHE` hochzählen (`uae-pad-v2`, …).
-- Marke: Farben Stratosphere `#002E5D`, Sky `#0059C2`, Beacon Red `#E3001F`. Das Emirates-Logo wird nur zur Laufzeit von
+- Marke: Farben siehe oben (Rot, Gold, Burgund). Das Emirates-Logo wird nur zur Laufzeit von
   `pics.avs.io` geladen und nie ins Repo gelegt. Keine Namen aus LH Virtual übernehmen (flySmart, padOS, Contrail); unsere heißen UAE Pad, UAE Fly, UAE Ops, Logbook.
 - Performance (V1/VR/V2, Landestrecke) wird **nicht selbst gerechnet**, sondern aus SimBriefs Runway Analysis (`tlr` im OFP) gelesen (`normTlr` in `js/ofp.js`, Anzeige `js/apps/perf.js`).
 

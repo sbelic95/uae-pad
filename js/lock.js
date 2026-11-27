@@ -8,10 +8,12 @@ import { I } from "./icons.js";
 import { tzOf } from "./tz.js";
 
 
+const LOGO = "https://pics.avs.io/480/160/EK.png"; // Emirates logo, loaded at display time (not part of this project)
+
 export function brand() {
   // "Virtual" under the logo: this is a virtual airline, not Emirates
-  // own text word mark – the airline's logo is not used in this fan project
-  return `<span class="vbrand txt"><span class="word">EMIRATES</span><span class="vword">Virtual</span></span>`;
+  // the Emirates logo is loaded at display time from pics.avs.io (never part of this repo); text word mark if it fails
+  return `<span class="vbrand"><img class="ek-logo" src="${LOGO}" alt="Emirates" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'word',textContent:'EMIRATES'}))"><span class="vword">Virtual</span></span>`;
 }
 
 export function noteHtml(a) {
