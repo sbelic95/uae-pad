@@ -1,0 +1,45 @@
+{
+ "_help": "PROPOSAL – to be confirmed by Emirates Virtual. Ranks by block hours from the logbook on this device. hours = from how many hours the rank applies.",
+ "ranks": [
+  {
+   "hours": 0,
+   "name": {
+    "sr": "Drugi oficir",
+    "en": "Second Officer",
+    "de": "Second Officer"
+   }
+  },
+  {
+   "hours": 25,
+   "name": {
+    "sr": "Prvi oficir",
+    "en": "First Officer",
+    "de": "First Officer"
+   }
+  },
+  {
+   "hours": 100,
+   "name": {
+    "sr": "Stariji prvi oficir",
+    "en": "Senior First Officer",
+    "de": "Senior First Officer"
+   }
+  },
+  {
+   "hours": 250,
+   "name": {
+    "sr": "Kapetan",
+    "en": "Captain",
+    "de": "Kapitän"
+   }
+  },
+  {
+   "hours": 500,
+   "name": {
+    "sr": "Stariji kapetan",
+    "en": "Senior Captain",
+    "de": "Senior Captain"
+   }
+  }
+ ]
+}

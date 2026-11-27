@@ -1,0 +1,48 @@
+{
+ "_help": "Manuals for UAE Pad. Links only (public repo – never a PDF here). Only real, checked links; company documents are added by the VA.",
+ "sections": [
+  {
+   "title": {
+    "sr": "Emirates Virtual",
+    "en": "Emirates Virtual",
+    "de": "Emirates Virtual"
+   },
+   "items": []
+  },
+  {
+   "title": {
+    "sr": "UAE Pad",
+    "en": "UAE Pad",
+    "de": "UAE Pad"
+   },
+   "items": [
+    {
+     "title": {
+      "sr": "Uputstvo za UAE Pad",
+      "en": "UAE Pad guide",
+      "de": "Anleitung zum UAE Pad"
+     },
+     "text": {
+      "sr": "Šta sve aplikacije mogu.",
+      "en": "What every app can do.",
+      "de": "Was jede App kann."
+     },
+     "url": "https://github.com/sbelic95/uae-pad#readme"
+    },
+    {
+     "title": {
+      "sr": "Privatnost",
+      "en": "Privacy",
+      "de": "Datenschutz"
+     },
+     "text": {
+      "sr": "Koji podaci ostaju na uređaju i ko ih dobija.",
+      "en": "Which data stays on the device and who gets it.",
+      "de": "Welche Daten auf dem Gerät bleiben und wer sie bekommt."
+     },
+     "url": "https://sbelic95.github.io/uae-pad/privacy.html"
+    }
+   ]
+  }
+ ]
+}

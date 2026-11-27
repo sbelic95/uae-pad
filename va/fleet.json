@@ -1,0 +1,1776 @@
+{
+ "_help": "Emirates Virtual fleet (vAMSYS import). Run tools/import-schedule.py for a new version.",
+ "source": "UAE_Aircraft_2026-11.csv",
+ "aircraft": [
+  {
+   "reg": "A6-EDC",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDD",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDE",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDF",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDG",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDH",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDI",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDJ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDK",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDL",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDM",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDN",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDO",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDP",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDQ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDR",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDS",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDT",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDU",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDV",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDW",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDX",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDY",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EDZ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEA",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEB",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEC",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EED",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEE",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEF",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEG",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEH",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEI",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEJ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEK",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEL",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEM",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEN",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEO",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEP",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEQ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EER",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EES",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EET",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEU",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEV",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEW",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEX",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEY",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EEZ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOA",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOB",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOC",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOD",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOE",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOF",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOG",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOH",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOI",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOJ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOK",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOL",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOM",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EON",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOO",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOP",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOQ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOR",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOS",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOT",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOU",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOV",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOW",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOX",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOY",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EOZ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUA",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUB",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUC",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUD",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUE",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUF",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUG",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUH",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUI",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUJ",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUK",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUL",
+   "type": "A388",
+   "name": "Airbus A380-861",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUM",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUN",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUO",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUP",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUQ",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUR",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUS",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUT",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUU",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUV",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUW",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUX",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUY",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EUZ",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVA",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVB",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVC",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVD",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVE",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVF",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVG",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVH",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVI",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVJ",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVK",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVL",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVM",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVN",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVO",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVP",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVQ",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVR",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EVS",
+   "type": "A388",
+   "name": "Airbus A380-842",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EBK",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)(SF)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EBR",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EBU",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EBY",
+   "type": "B77W",
+   "name": "Boeing 777-36N(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECF",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECG",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECH",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECI",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECJ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECK",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECM",
+   "type": "B77W",
+   "name": "Boeing 777-36N(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECO",
+   "type": "B77W",
+   "name": "Boeing 777-36N(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECQ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECR",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECS",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECT",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECU",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECV",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECW",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECX",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECY",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ECZ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGA",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGB",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGC",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGD",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGE",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGF",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGG",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGH",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGI",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGJ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGK",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGL",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGM",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGN",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGO",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGP",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGQ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGR",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGS",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGT",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGU",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGV",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGW",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGX",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGY",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EGZ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENA",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENB",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENC",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-END",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENE",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENF",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENG",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENH",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENI",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENJ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENK",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENL",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENM",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENN",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENO",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENP",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENQ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENR",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENS",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENT",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENU",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENV",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENW",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENX",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENY",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-ENZ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPA",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPB",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPC",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPD",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPE",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPF",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPG",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPH",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPI",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPJ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPK",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPL",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPM",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPN",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPO",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPP",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPQ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPR",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPS",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPT",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPU",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPV",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPW",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPX",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPY",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EPZ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQA",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQB",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQC",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQD",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQE",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQF",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQG",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQH",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQI",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQJ",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQK",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQL",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQM",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQN",
+   "type": "B77W",
+   "name": "Boeing 777-31H(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQO",
+   "type": "B77W",
+   "name": "Boeing 777-300(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EQP",
+   "type": "B77W",
+   "name": "Boeing 777-300(ER)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFM",
+   "type": "B77L",
+   "name": "Boeing 777-F1H",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFN",
+   "type": "B77L",
+   "name": "Boeing 777-F1H",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFO",
+   "type": "B77L",
+   "name": "Boeing 777-F1H",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFS",
+   "type": "B77L",
+   "name": "Boeing 777-F1H",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFT",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFU",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFV",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFW",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFX",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFY",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EFZ",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWA",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWB",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWC",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWD",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWE",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWF",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWG",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWH",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWI",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWJ",
+   "type": "B77L",
+   "name": "Boeing 777-21H(LR)",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWK",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWL",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWM",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWN",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWO",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWP",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EWQ",
+   "type": "B77L",
+   "name": "Boeing 777-F",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXA",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXB",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXC",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXD",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXE",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXF",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXG",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXH",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXI",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXJ",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXK",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXL",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXM",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXN",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXO",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXP",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXQ",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXR",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXS",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXT",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXU",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXV",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXW",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXX",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXY",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-EXZ",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-JHA",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-JHB",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-JHC",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  },
+  {
+   "reg": "A6-JHD",
+   "type": "A359",
+   "name": "Airbus A350-941",
+   "selcal": ""
+  }
+ ]
+}

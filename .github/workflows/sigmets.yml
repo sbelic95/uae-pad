@@ -1,0 +1,95 @@
+# Every 30 minutes: the international SIGMETs (thunderstorms, turbulence, icing, volcanic ash …) from
+# aviationweather.gov, made compact for the map of the pad, and the TAFs of every airport of the Emirates network
+# (va/routes.json) for the Weather app – aviationweather.gov does not allow browsers to read it directly.
+# Published as sigmets.json and taf.json on the "wx" branch, read via raw.githubusercontent.com.
+name: SIGMETs
+
+on:
+  schedule:
+    - cron: "11,41 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sigmets
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch and publish sigmets.json
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          curl -sSf --max-time 60 -A "uae-pad-sigmets" "https://aviationweather.gov/api/data/isigmet?format=json" -o isigmet.json
+          mkdir pub
+          python3 - <<'PY'
+          import datetime, json
+          raw = json.load(open("isigmet.json"))
+          items = raw if isinstance(raw, list) else raw.get("data", raw.get("features", []))
+          print(len(items), "items; keys of the first:", sorted(items[0].keys()) if items else "-")
+          def when(v):
+              if v is None: return None
+              if isinstance(v, (int, float)): return datetime.datetime.fromtimestamp(v, datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+              return str(v)
+          if items:
+              print("coords of the first:", json.dumps(items[0].get("coords"))[:300])
+          # coords come as points {lat, lon}, as rings (lists of points) or as GeoJSON-like pairs [lon, lat]
+          def rings(c):
+              if not isinstance(c, list) or not c:
+                  return []
+              if all(isinstance(x, dict) for x in c):
+                  return [[[float(x["lat"]), float(x["lon"])] for x in c if x.get("lat") is not None and x.get("lon") is not None]]
+              if all(isinstance(x, (list, tuple)) and len(x) == 2 and all(isinstance(v, (int, float)) for v in x) for x in c):
+                  return [[[float(x[1]), float(x[0])] for x in c]]
+              return [r for x in c for r in rings(x)]
+          out = []
+          for s in items:
+              p = s.get("properties", s)
+              cs = p.get("coords") or (s.get("geometry") or {}).get("coordinates") or []
+              for ring in rings(cs):
+                  poly = [[round(a, 2), round(b, 2)] for a, b in ring]
+                  if len(poly) < 3:
+                      continue
+                  out.append({"fir": p.get("firId") or p.get("icaoId") or "", "name": p.get("firName") or "",
+                              "hazard": (p.get("hazard") or "").upper(), "qual": p.get("qualifier") or "",
+                              "from": when(p.get("validTimeFrom")), "to": when(p.get("validTimeTo")),
+                              "base": p.get("base"), "top": p.get("top"), "poly": poly, "raw": (p.get("rawSigmet") or "")[:600]})
+          now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          json.dump({"updated": now, "sigmets": out}, open("pub/sigmets.json", "w"), separators=(",", ":"))
+          print(len(out), "SIGMETs with an area")
+          PY
+          curl -sSf --max-time 30 "https://raw.githubusercontent.com/${REPO}/main/va/routes.json" -o routes.json || echo '{"airports":{}}' > routes.json
+          python3 - <<'PY'
+          import datetime, json, urllib.request
+          ids = sorted(json.load(open("routes.json")).get("airports", {}).keys())
+          taf = {}
+          for i in range(0, len(ids), 40):
+              url = "https://aviationweather.gov/api/data/taf?format=json&ids=" + ",".join(ids[i:i + 40])
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "uae-pad-taf"})
+                  for x in json.load(urllib.request.urlopen(req, timeout=60)) or []:
+                      if x.get("icaoId") and x.get("rawTAF"): taf[x["icaoId"]] = x["rawTAF"]
+              except Exception as e:
+                  print("TAF batch failed:", e)
+          now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          json.dump({"updated": now, "taf": taf}, open("pub/taf.json", "w"), separators=(",", ":"))
+          print(len(taf), "TAFs of", len(ids), "airports")
+          PY
+          cd pub
+          git init -q -b wx
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sigmets.json taf.json
+          git commit -qm "SIGMETs and TAFs from aviationweather.gov"
+          for i in 1 2 3 4; do
+            git push -qf "https://x-access-token:${TOKEN}@github.com/${REPO}.git" wx && exit 0
+            echo "push failed, next try in $((i * 15)) s"; sleep $((i * 15))
+          done
+          exit 1

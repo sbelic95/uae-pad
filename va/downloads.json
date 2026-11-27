@@ -1,0 +1,40 @@
+{
+ "_help": "Downloads for UAE Pad. Each item: title and text in sr/en/de, url, tag. Only real, checked links.",
+ "sections": [
+  {
+   "title": {
+    "sr": "Planiranje i mreža",
+    "en": "Planning and network",
+    "de": "Planung und Netzwerk"
+   },
+   "items": [
+    {
+     "title": {
+      "sr": "SimBrief",
+      "en": "SimBrief",
+      "de": "SimBrief"
+     },
+     "text": {
+      "sr": "Napravi OFP – UAE Pad ga sam preuzima.",
+      "en": "Create your OFP – UAE Pad picks it up by itself.",
+      "de": "OFP erstellen – UAE Pad holt ihn selbst."
+     },
+     "url": "https://dispatch.simbrief.com/"
+    },
+    {
+     "title": {
+      "sr": "VATSIM događaji",
+      "en": "VATSIM events",
+      "de": "VATSIM-Events"
+     },
+     "text": {
+      "sr": "Svi događaji na mreži.",
+      "en": "All events on the network.",
+      "de": "Alle Events im Netzwerk."
+     },
+     "url": "https://my.vatsim.net/events"
+    }
+   ]
+  }
+ ]
+}

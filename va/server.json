@@ -1,0 +1,4 @@
+{
+ "_help": "Address of the UAE Pad server (Cloudflare Worker, see server/README.md). Empty = no server, everything stays on the device.",
+ "url": ""
+}

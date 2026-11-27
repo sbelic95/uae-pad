@@ -1,0 +1,81 @@
+{
+ "_help": "Notices and tips for UAE Pad. notices: id (unique), date, until, title and text in sr/en/de. tips: one per day; with \"phase\" it shows as crew info in that flight phase. Only real VA content.",
+ "notices": [
+  {
+   "id": "uae-pad-1-0",
+   "date": "2026-11-27",
+   "until": "2027-01-31",
+   "title": {
+    "sr": "UAE Pad 1.0",
+    "en": "UAE Pad 1.0",
+    "de": "UAE Pad 1.0"
+   },
+   "text": {
+    "sr": "Crew pad za tvoje Emirates Virtual letove: red letenja za novembar 2026 sa 952 putnička i kargo leta, SimBrief, VATSIM i dnevnik.",
+    "en": "The crew pad for your Emirates Virtual flights: schedule of November 2026 with 952 passenger and cargo flights, SimBrief, VATSIM and the logbook.",
+    "de": "Das Crew-Pad für deine Emirates-Virtual-Flüge: Flugplan November 2026 mit 952 Passagier- und Cargoflügen, SimBrief, VATSIM und Logbuch."
+   }
+  }
+ ],
+ "tips": [
+  {
+   "phase": [
+    "preflight"
+   ],
+   "sr": "Pre polaska proveri TOBT i TSAT u UAE Ops – start-up traži u prozoru od 5 minuta oko TSAT-a.",
+   "en": "Before departure, check TOBT and TSAT in UAE Ops – request start-up within 5 minutes of your TSAT.",
+   "de": "Vor dem Abflug TOBT und TSAT in UAE Ops prüfen – Start-up innerhalb von 5 Minuten um die TSAT anfragen."
+  },
+  {
+   "phase": [
+    "cruise"
+   ],
+   "sr": "Krstarenje: otprilike svakog sata dodirni „Provera goriva“ i upiši FOB.",
+   "en": "Cruise: about every hour, tap “Fuel check” and enter your FOB.",
+   "de": "Reiseflug: etwa jede Stunde auf „Fuel Check“ tippen und den FOB eintragen."
+  },
+  {
+   "phase": [
+    "descent",
+    "approach"
+   ],
+   "sr": "Pre spuštanja: ATIS i pista za sletanje su u UAE Ops, VREF i VAPP u „Performanse“.",
+   "en": "Before descent: ATIS and landing runway are in UAE Ops, VREF and VAPP in “Performance”.",
+   "de": "Vor dem Sinkflug: ATIS und Landepiste stehen in UAE Ops, VREF und VAPP unter „Performance“."
+  },
+  {
+   "phase": [
+    "taxiin",
+    "onblock"
+   ],
+   "sr": "Kad staneš na poziciju (on-block), let se sam upisuje u dnevnik.",
+   "en": "When you reach your stand (on-block), the flight is logged by itself.",
+   "de": "Sobald du am Stand stehst (On-Block), wird der Flug von selbst ins Logbuch eingetragen."
+  },
+  {
+   "sr": "U krstarenju otprilike svakog sata dodirni „Provera goriva“ i upiši FOB – pad ga poredi sa planom.",
+   "en": "In cruise, tap “Fuel check” about every hour and enter your FOB – the pad compares it with the plan.",
+   "de": "Im Reiseflug etwa jede Stunde auf „Fuel Check“ tippen und den FOB eintragen – das Pad vergleicht ihn mit dem Plan."
+  },
+  {
+   "sr": "Prozor za start-up je od 5 minuta pre do 5 minuta posle TSAT-a. Prati ga u UAE Ops.",
+   "en": "The start-up window runs from 5 minutes before to 5 minutes after your TSAT. Watch it in UAE Ops.",
+   "de": "Das Start-up-Fenster geht von 5 Minuten vor bis 5 Minuten nach der TSAT. Du siehst es in UAE Ops."
+  },
+  {
+   "sr": "Novi OFP u SimBrief-u pad preuzima sam za nekoliko minuta – ili odmah dugmetom za osvežavanje gore desno.",
+   "en": "The pad picks up a new SimBrief OFP by itself within a few minutes – or at once with the refresh button at the top right.",
+   "de": "Einen neuen SimBrief-OFP holt das Pad nach wenigen Minuten selbst – oder sofort mit dem Aktualisieren-Knopf oben rechts."
+  },
+  {
+   "sr": "Na VATSIM-u pre prvog poziva poslušaj ATIS i javi slovo informacije.",
+   "en": "On VATSIM, listen to the ATIS before your first call and report the information letter.",
+   "de": "Auf VATSIM vor dem ersten Funkspruch die ATIS hören und den Buchstaben melden."
+  },
+  {
+   "sr": "V-brzine u „Performanse“ dolaze iz SimBrief analize piste – uvek ih proveri u EFB-u svog aviona.",
+   "en": "The V-speeds in “Performance” come from the SimBrief runway analysis – always check them in your aircraft's EFB.",
+   "de": "Die V-Speeds unter „Performance“ kommen aus der SimBrief Runway Analysis – prüf sie immer im EFB deines Flugzeugs."
+  }
+ ]
+}

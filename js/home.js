@@ -1,0 +1,132 @@
+// Home screen: widgets on the left, apps and the dock.
+import { S, settings, derived, wxOf } from "./data.js";
+import { career, careerHtml } from "./career.js";
+import { actions } from "./actions.js";
+import { t, LOCALE, loc } from "./i18n.js";
+import { esc, store, hhmmz } from "./util.js";
+import { sheet } from "./sheet.js";
+import { APP_ICONS, I } from "./icons.js";
+import { flightWidget, timesWidget, todayWidget, liveHtml } from "./lock.js";
+import { cityOf } from "./tz.js";
+import { planCard, suggestCard, vamBookingCard } from "./booking.js";
+import { pilot } from "./account.js";
+import { weatherWidget } from "./apps/weather.js";
+import { calendarWidget } from "./apps/calendar.js";
+import { unreadMail } from "./apps/mail.js";
+
+// every app of the pad with its group (the home pages) – "core" apps cannot be removed in the App Store
+export const GROUPS = [["ops", "Operations"], ["crew", "Crew & community"], ["net", "Network & weather"], ["tools", "Tools & device"]];
+export const HOME_APPS = [
+  { id: "fly", name: "UAE Fly", icon: "fly", g: "ops", core: true }, { id: "ops", name: "UAE Ops", icon: "ops", g: "ops", core: true },
+  { id: "apt", name: "Airport", icon: "airport", g: "ops" }, { id: "log", name: "Logbook", icon: "log", g: "ops", core: true },
+  { id: "kneeboard", name: "Kneeboard", icon: "kneeboard", g: "ops" }, { id: "manuals", name: "Manuals", icon: "manuals", g: "ops" },
+  { id: "calendar", name: "Calendar", icon: "calendar", g: "ops" }, { id: "cabin", name: "Cabin", icon: "cabin", g: "ops" },
+  { id: "simbrief", name: "SimBrief", icon: "simbrief", g: "ops" },
+  { id: "checklist", name: "Checklist", icon: "checklist", g: "ops" }, { id: "landing", name: "Landing", icon: "landing", g: "ops" },
+  { id: "turnaround", name: "Turnaround", icon: "turnaround", g: "ops" }, { id: "fenix", name: "Fenix EFB", icon: "fenix", g: "ops" },
+  { id: "mail", name: "Mail", icon: "mail", g: "crew" }, { id: "messages", name: "Messages", icon: "messages", g: "crew" },
+  { id: "academy", name: "Academy", icon: "academy", g: "crew" }, { id: "news", name: "News", icon: "news", g: "crew" },
+  { id: "photos", name: "Photos", icon: "photos", g: "crew" }, { id: "scenery", name: "Scenery", icon: "scenery", g: "crew" },
+  { id: "radar", name: "VATSIM Radar", icon: "radar", g: "net" }, { id: "ivao", name: "IVAO Radar", icon: "ivao", g: "net" },
+  { id: "weather", name: "Weather", icon: "weather", g: "net" },
+  { id: "clock", name: "Clock", icon: "clock", g: "tools" }, { id: "calc", name: "Calculator", icon: "calc", g: "tools" },
+  { id: "reference", name: "Reference", icon: "reference", g: "tools" }, { id: "browser", name: "Browser", icon: "browser", g: "tools" },
+  { id: "downloads", name: "Downloads", icon: "downloads", g: "tools" }, { id: "store", name: "App Store", icon: "store", g: "tools", core: true },
+  { id: "settings", name: "Settings", icon: "settings", g: "tools", core: true },
+];
+export const installed = (id) => { const a = HOME_APPS.find((x) => x.id === id); return !!a && (a.core || !(settings.appsOff || []).includes(id)); };
+const DOCK = ["fly", "ops", "log", "settings"];
+let page = store.get("uae.page", 0);
+export function homePage(to, rel) { page = Math.max(0, Math.min(GROUPS.length - 1, rel ? page + to : to)); store.set("uae.page", page); }
+
+function greeting(now) {
+  const h = new Date(now).getHours();
+  return h < 5 ? t("Good night") : h < 12 ? t("Good morning") : h < 18 ? t("Good afternoon") : t("Good evening");
+}
+const icon = (a, badge) => `<button class="app-ic" data-app="${a.id}"><div class="ico">${badge ? `<span class="badge">${badge}</span>` : ""}${APP_ICONS[a.icon]}</div><span>${esc(t(a.name))}</span></button>`;
+
+export function renderHome(el, now = Date.now()) {
+  const o = S.ofp, d = derived(now);
+  const urgent = actions(now).filter((a) => a.lv === "red" || a.lv === "attn");
+  const badges = { ops: urgent.filter((a) => a.app === "ops").length, fly: urgent.filter((a) => a.app === "fly").length, mail: installed("mail") ? unreadMail() : 0 };
+  const sub = o ? t("{f} to {city} today", { f: o.iataNo || o.callsign, city: cityOf(o.dest) || o.dest?.icao }) : t("No flight loaded");
+  el.innerHTML = `
+    <div class="hm-widgets">
+      <div><p class="hm-greet">${esc(greeting(now))}, ${pilot()?.first ? esc(pilot().first) : t("Captain")}</p><div class="hm-sub">${esc(sub)}</div>${show("wx") ? wxHere(o, d) : ""}${show("career") ? careerHtml(career()) + (pilot()?.rank ? `<div class="hm-vam"><span class="lbl">VATSIM</span> <b>${esc(pilot().rank)}</b></div>` : "") : ""}</div>
+      ${flightWidget(o, d, now)}${timesWidget(o, now)}${todayWidget(now)}${show("wwx") ? weatherWidget() : ""}${show("wcal") ? calendarWidget() : ""}
+    </div>
+    <div class="hm-main">
+      <div class="hm-pages"><div class="hm-pg-name lbl">${t(GROUPS[page][1])}</div>
+        <div class="hm-apps">${HOME_APPS.filter((a) => a.g === GROUPS[page][0] && installed(a.id)).map((a) => icon(a, badges[a.id])).join("")}</div>
+        <div class="hm-dots">${GROUPS.map((g, i) => `<button class="${i === page ? "on" : ""}" data-page="${i}" aria-label="${esc(t(g[1]))}"></button>`).join("")}</div></div>
+      <div class="hm-board">${boardOrder().filter(show).map((k) => BOARD[k](o, now, d)).join("")}</div>
+    </div>
+    <div class="dock">${DOCK.map((id) => icon(HOME_APPS.find((a) => a.id === id), badges[id])).join("")}</div>`;
+}
+
+// cards the pilot can hide (Settings → Home screen); the cards of the board can also be sorted
+export const HOME_CARDS = [["wwx", "Weather widget"], ["wcal", "Calendar widget"], ["wx", "Weather here"], ["career", "Career"], ["vbook", "Your booking"], ["plan", "Flight plan"], ["suggest", "Suggested for you"], ["notices", "Notices"], ["events", "Network events"]];
+const BOARD = { vbook: (o, now) => vamBookingCard(now), plan: (o, now) => planCard(o, now), suggest: (o, now) => suggestCard(now), notices: (o, now, d) => noticesCard(now, d), events: (o, now) => eventsCard(o, now) };
+export const BOARD_DEFAULT = ["vbook", "plan", "suggest", "notices", "events"];
+export function boardOrder() { const o = (settings.homeOrder || []).filter((k) => BOARD[k]); return [...o, ...BOARD_DEFAULT.filter((k) => !o.includes(k))]; }
+const show = (k) => !(settings.homeHide || []).includes(k);
+
+// ---------- weather where you are: departure until take-off, then destination ----------
+function wxHere(o, d) {
+  if (!o) return "";
+  const apt = d && S.st?.takeoff ? o.dest : o.dep, w = wxOf(apt.icao);
+  if (!w) return "";
+  const wind = w.wspd != null ? `${w.vrb ? "VRB" : String(w.wdir ?? 0).padStart(3, "0")}/${w.wspd}${w.gust ? "G" + w.gust : ""} kt` : "";
+  const bits = [w.temp != null ? `${w.temp}°` : "", wind, w.qnh ? `Q${w.qnh}` : ""].filter(Boolean);
+  return `<div class="hm-wx"><span class="i">${I.wx}</span><b>${esc(cityOf(apt) || apt.icao)}</b><span>${bits.map(esc).join(" · ")}</span>${w.cat ? `<span class="cat ${w.cat}">${w.cat}</span>` : ""}</div>`;
+}
+
+// ---------- notices and tips of the airline (va/notices.json) ----------
+const day = (ts) => new Date(ts).toISOString().slice(0, 10);
+function activeNotices(now) {
+  const today = day(now);
+  return (S.notices?.notices || []).filter((n) => n.id && (!n.date || n.date <= today) && (!n.until || n.until >= today))
+    .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+}
+// a tip for the phase of the flight ("crew info"), else the tip of the day
+function tipFor(now, d) {
+  const tips = S.notices?.tips || [], ph = d?.phase;
+  const forPhase = ph ? tips.filter((x) => (x.phase || []).includes(ph)) : [];
+  if (forPhase.length) return [t("Crew info"), loc(forPhase[Math.floor(now / 6e5) % forPhase.length])];
+  const daily = tips.filter((x) => !x.phase);
+  return daily.length ? [t("Tip of the day"), loc(daily[Math.floor(now / 864e5) % daily.length])] : ["", ""];
+}
+function noticesCard(now, d) {
+  const list = activeNotices(now).slice(0, 3), read = store.get("uae.noticesRead", []);
+  const [tipLbl, tip] = tipFor(now, d);
+  const fmt = new Intl.DateTimeFormat(LOCALE(), { day: "numeric", month: "short", timeZone: "UTC" });
+  return `<div class="hb-card"><div class="lbl">Emirates Virtual · ${t("Notices")}</div>
+    ${list.length ? list.map((n) => `<button class="hb-row" data-notice="${esc(n.id)}">${read.includes(n.id) ? "" : `<i class="dot"></i>`}<b>${esc(loc(n.title))}</b><span class="dim">${n.date ? esc(fmt.format(new Date(n.date))) : ""}</span></button>`).join("")
+      : `<div class="dim hb-empty">${t("No notices right now.")}</div>`}
+    ${tip ? `<div class="hb-tip"><div class="lbl">${esc(tipLbl)}</div>${esc(tip)}</div>` : ""}</div>`;
+}
+export function openNotice(id) {
+  const n = activeNotices(Date.now()).find((x) => x.id === id) || (S.notices?.notices || []).find((x) => x.id === id);
+  if (!n) return;
+  store.set("uae.noticesRead", [...new Set([...store.get("uae.noticesRead", []), id])].slice(-50));
+  sheet(`<div class="lbl">${t("Notices")}${n.date ? " · " + esc(n.date) : ""}</div><h2 style="margin:4px 0 10px">${esc(loc(n.title))}</h2>
+    <p style="white-space:pre-line;font-size:16px;line-height:1.5;margin:0 0 16px">${esc(loc(n.text))}</p><button class="btn pri" data-close>${t("Close")}</button>`);
+}
+
+// ---------- coming VATSIM events: ours first (Serbia, the airports of this flight), then the soonest ----------
+function eventsCard(o, now) {
+  const mine = new Set([o?.dep?.icao, o?.dest?.icao].filter(Boolean));
+  const score = (e) => (e.airports || []).some((a) => mine.has(a)) ? 0 : (e.airports || []).some((a) => a.startsWith("LY")) ? 1 : 2;
+  const list = (S.vatEvents || []).filter((e) => Date.parse(e.end) > now)
+    .sort((a, b) => score(a) - score(b) || Date.parse(a.start) - Date.parse(b.start)).slice(0, 4)
+    .sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+  const dd = new Intl.DateTimeFormat(LOCALE(), { day: "2-digit", timeZone: "UTC" }), mm = new Intl.DateTimeFormat(LOCALE(), { month: "short", timeZone: "UTC" });
+  const row = (e) => {
+    const s = Date.parse(e.start), live = s <= now;
+    return `<a class="hb-ev" href="${esc(e.link || "https://my.vatsim.net/events")}" target="_blank" rel="noopener"><div class="d"><b>${dd.format(s)}</b><span>${esc(mm.format(s))}</span></div>
+      <div class="n"><b>${esc(e.name)}</b><span class="dim">${live ? `<span class="live-dot"></span>${t("Now on")} · ` : ""}${hhmmz(s).slice(0, 5)}–${hhmmz(Date.parse(e.end))}${(e.airports || []).slice(0, 3).map((a) => ` <span class="apt${mine.has(a) ? " mine" : ""}">${esc(a)}</span>`).join("")}</span></div></a>`;
+  };
+  return `<div class="hb-card"><div class="lbl">VATSIM · ${t("Network events")}</div>
+    ${list.length ? list.map(row).join("") : `<div class="dim hb-empty">${t("No events loaded yet.")}</div>`}</div>`;
+}
+export { liveHtml };

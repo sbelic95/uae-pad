@@ -1,0 +1,4 @@
+{
+ "_help": "Landing data per aircraft type for the Landing app. Same format as ASL Pad. Only the VA's real data – nothing invented.",
+ "types": {}
+}
