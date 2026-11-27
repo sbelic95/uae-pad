@@ -831,6 +831,7 @@ body.framed #crewcard:not([hidden]) { position: absolute; left: calc((100vw - va
 .vbrand.txt .word { font: 700 1em/1 var(--f-cond); letter-spacing: .08em; } .lk-brand .vbrand.txt { font-size: clamp(30px, 3.8vw, 44px); }
 .vbrand.txt .vword { margin: 3px 0 0 !important; color: var(--accent); }
 .lk-brand .word { font: 700 clamp(30px, 3.8vw, 44px)/1 var(--f-cond); letter-spacing: .08em; }
+img.ek-logo { filter: none !important; border-radius: 3px; box-shadow: 0 6px 20px rgba(0, 0, 0, .3); } .lk-brand img.ek-logo { height: clamp(40px, 5vw, 60px); }
 .lk-brand .vbrand .vword, #crewcard .cc-top .vbrand .vword { margin: 2px 0 0; color: var(--accent); }
 #crewcard .cc-top .vbrand.txt { font-size: 18px; }
 
